@@ -1,126 +1,142 @@
-/* let it all be the same */
 *{
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
   text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
-  /*border: 1px solid red;*/
-}
-.logo{
-  font-size: 3em;
-}
-.logo:hover{
-  color: red;
-}
-.name{
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-}
-footer{
-  overflow: auto;
-  clear:both;
 }
 body{
-  /*background-image: url("../img/fill.jpg");*/
-  background-size: cover;
-  font-weight: 400;
-  text-align: center;
-  width: 95%;
+  line-height: 1.6em;
+  font-family: 'Roboto Slab', serif;
+}
+.wrapper{
+  width: 90%;
   margin: auto;
 }
 header{
-  margin-bottom: 2em;
+  padding: 1em 0;
   text-align: center;
+}
+.nav a{
+  padding: 1em 1em;
+  background-color: white;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+}
+.intro{
+  padding: 0 1em;
+}
+#portfolio{
+  text-align: center;
+  padding-bottom: 1em;
 }
 .nav{
-  font-size: 1.5em;
-  font-family: 'Oswald', sans-serif;
-}
-h1{
-  font-family: 'Merriweather', serif;
-}
-a{
-  display: block;
-  padding: 10px 10px;
-  margin-bottom: 10px;
-  /*background-color: white;*/
-}
-a:visited{
-  color: black;
-}
-a:link{
-  color: black;
-}
-a:hover{
-  background-color: black;
-  color: white;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 img{
-    width: 100%;
-}
-.wrap{
-  width: 90%;
-  margin: auto;
-  text-align: center;
+  width: 100%;
 }
 .section{
+  text-align: center;
+  margin-bottom: 2em;
+}
+#footer{
+  width: 100%;
+  text-align: center;
+  padding: 1em 1em;
+}
+#footer a{
+  margin-top: 2.5em;
+}
+.me{
+  float: left;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.me{
+  float: left;
+  overflow:auto;
+  clear: both;
+}
+.ankor{
+  float: right;
+}
+.list{
+  visibility: hidden;
+}
+#footer {
+ overflow: auto;
+ clear: both;
+
+}
+/*validated the css so far no errors*/
+/*media query for tablet*/
+@media only screen and (min-width: 768px) {
+  .section{
+  width: 45%;
+  float: left;
+  margin: 1em 1em;
+}
+li, a{
+  padding: 5px 5px;
   display: inline-block;
 }
-@media(min-width: 768px) {
-  .section{
-    width: 45%;
-    float: right;
-    margin-right: 5%;
-  }
-  li, a{
-    padding: 5px 5px;
-    display: inline-block;
-  }
-  ul{
-    padding: 0px;
-  }
-  a{
-    background-color: none;
-  }
-  .intro img{
-    width: 40%;
-    float: right;
-    margin-left: 5%;
-  }
-  .intro p{
-    text-align: left;
-    line-height: 1.5em;
-    font-size: 1.4em;
-  }
-  .name{
-    overflow: auto;
-    clear: both;
-  }
-  .intro{
-    margin-top: 3em;
-  }
+.intro img{
+  width: 40%;
+  float: right;
+  margin-left: 5%;
 }
-@media(min-width: 1024px){
-    .wrap{
-      width: 90%;
-      margin: auto;
-    }
-    .section{
-      width: 29%;
-      float: left;
-      margin-right: 1.7%;
-      margin-left: 1.7%;
-    }
-    .logo{
-      float: left;
-    }
-    .nav{
-      float: right;
-    }
-    .intro{
-      padding-top: 3em;
-      overflow: auto;
-      clear: both;
-    }
+.intro p{
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 1.4em;
+}
+.name{
+  overflow: auto;
+  clear: both;
+}
+.intro{
+  margin-top: 3em;
+}
+#footer p {
+  width: 70%;
+  margin: auto;
+}
+.ankor{
+  display: none;
+}
+.list{
+  visibility: visible;
+  float: right;
+  margin-right: 1em;
+}
+.me{
+  margin-left: 1em;
+}
+}
+@media only screen and (min-width: 1024px){
+  .wrap{
+     width: 90%;
+     margin: auto;
+   }
+   .section{
+     width: 29%;
+     float: left;
+     margin-right: 1.7%;
+     margin-left: 1.7%;
+   }
+   #logo{
+     float: left;
+     margin-top: 1.5em;
+   }
+   .nav{
+     float: right;
+   }
+   .intro{
+     padding-top: 3em;
+     overflow: auto;
+     clear: both;
+   }
+
 }
